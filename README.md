@@ -89,14 +89,16 @@ This will allow the Random Forest model to find the best parameters based on cro
 # Results
 ### After running the script, the model will output various performance metrics and visualizations:
 
-### Confusion Matrix: This matrix helps to understand how well the model distinguishes between fraudulent and non-fraudulent transactions:
+### Confusion Matrix: 
+This matrix helps to understand how well the model distinguishes between fraudulent and non-fraudulent transactions:
 ``` 
 Confusion Matrix: [[2527   14]
                    [  36  313]]
 ```
 Figure 4: Confusion matrix showing true positive, true negative, false positive, and false negative counts.
 
-### Classification Report: The classification report provides precision, recall, F1-score, and support for each class: 
+### Classification Report: 
+The classification report provides precision, recall, F1-score, and support for each class: 
 ```
 Classification Report:              precision      recall    f1-score        support
                      0               0.985954    0.994490    0.990204    2541.000000
