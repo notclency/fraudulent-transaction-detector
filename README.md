@@ -108,7 +108,7 @@ weighted avg   0.982480  0.982699  0.982455  2890.000000
 Figure 5: Classification report including precision, recall, and F1-score.
 
 # Results
-The project produces several key insights and metrics:
+### The project produces several key insights and metrics:
 
 Accuracy: Reflects how accurately the model predicts fraudulent transactions.
 Confusion Matrix: Details the number of correctly and incorrectly classified transactions.
