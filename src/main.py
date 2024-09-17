@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.graph_objects as go
 import warnings
@@ -32,7 +30,7 @@ def clean_data():
     fig = px.bar(fraud_counts_by_category, x='category', y='fraud_count', title='Fraud count by product category')
     fig.update_layout(xaxis={'categoryorder': 'total descending'}, xaxis_tickangle=-90, xaxis_title='Product Category',
                       yaxis_title='Fraud Count')
-    # fig.show()
+    fig.show()
 
     # Fraud counts by state
     frauds_by_state = df[df['is_fraud'] == 1].groupby('state').size().reset_index(name='fraud_count')
@@ -48,15 +46,15 @@ def clean_data():
     fig.add_trace(go.Bar(x=sorted_df['state'], y=sorted_df['fraud_count'], name='Fraud Count', marker_color='crimson'))
     fig.update_layout(barmode='group', xaxis_tickangle=-90, xaxis_title='State', yaxis_title='Count',
                       title='Total Transactions and Fraud Count by State')
-    # fig.show()
+    fig.show()
 
     fig = px.bar(sorted_df, x='state', y='fraud_count', title='Fraud count by state')
-    # fig.show()
+    fig.show()
 
     category_counts = df.groupby('category')['trans_num'].nunique().reset_index(name='transaction_count')
     fig = px.bar(category_counts, x='category', y='transaction_count', title='Unique transaction count by category')
     fig.update_layout(xaxis={'categoryorder': 'total descending'})
-    # fig.show()
+    fig.show()
 
     # Data transformation
     df['dob'] = pd.to_datetime(df['dob'], format='%d-%m-%Y')
@@ -67,7 +65,7 @@ def clean_data():
 
     fraud_df = df[df['is_fraud'] == 1]
     fig = px.histogram(fraud_df, x='age', title='Age distribution of victims of fraudulent transactions', nbins=10)
-    # fig.show()
+    fig.show()
 
 
 def model_training_and_prediction():
@@ -95,24 +93,37 @@ def model_training_and_prediction():
 
 
 def random_forest():
-    param_grid = {
-        'n_estimators': [50, 100, 200],
-        'max_depth': [None, 10, 20, 30],
-        'min_samples_split': [2, 5, 10],
-        'min_samples_leaf': [1, 2, 4],
-        'bootstrap': [True, False]
+
+    # Hyperparameter tuning
+    # param_grid = {
+    #     'n_estimators': [50, 100, 200],
+    #     'max_depth': [None, 10, 20, 30],
+    #     'min_samples_split': [2, 5, 10],
+    #     'min_samples_leaf': [1, 2, 4],
+    #     'bootstrap': [True, False]
+    # }
+
+    # Best parameters from hyperparameter tuning
+    best_params = {
+        'bootstrap': False,
+        'max_depth': None,
+        'min_samples_leaf': 1,
+        'min_samples_split': 2,
+        'n_estimators': 100
     }
 
     rf = RandomForestClassifier(random_state=7)
-    grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, n_jobs=-1, verbose=2)
+    # uncomment line below for hyperparameter tuning
+    # grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, n_jobs=-1, verbose=2)
 
     X_train, y_train, X_test, y_test = model_training_and_prediction()
-    grid_search.fit(X_train, y_train)
 
-    print(f"Best Parameters: {grid_search.best_params_}")
-    print(f"Best Score: {grid_search.best_score_}")
+    # uncomment block below to run hyperparameter tuning
+    # grid_search.fit(X_train, y_train)
+    # print(f"Best Parameters: {grid_search.best_params_}")
+    # print(f"Best Score: {grid_search.best_score_}")
+    # best_params = grid_search.best_params_
 
-    best_params = grid_search.best_params_
     final_rf = RandomForestClassifier(**best_params, random_state=7)
     final_rf.fit(X_train, y_train)
 
