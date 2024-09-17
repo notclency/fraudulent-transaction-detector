@@ -115,7 +115,7 @@ Figure 5: Classification report including precision, recall, and F1-score.
 # Results
 ### The project produces several key insights and metrics:
 
-Accuracy: Reflects how accurately the model predicts fraudulent transactions.
+### Accuracy ###: Reflects how accurately the model predicts fraudulent transactions.
 Confusion Matrix: Details the number of correctly and incorrectly classified transactions.
 Classification Report: Provides a detailed performance assessment, including precision, recall, and F1-score for both classes.
 Visual Examples
