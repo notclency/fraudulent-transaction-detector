@@ -52,7 +52,7 @@ The script first cleans the dataset and generates various visualizations. These 
 ## Example Visualizations:
 
 ### Fraud Count by Product Category: 
-The following bar chart shows the count of fraudulent transactions per product category:
+The following bar chart shows the count of fraudulent transactions per product category.
 ![image info](visualizations/fig1.png)
 Figure 1: Number of fraudulent transactions by product category.
 
@@ -62,7 +62,7 @@ This bar chart illustrates the number of fraudulent transactions by state. It al
 Figure 2: Number of fraudulent transactions and total transactions by state.
 
 ### Age Distribution of Fraud Victims: 
-This histogram displays the age distribution of victims of fraudulent transactions:
+This histogram displays the age distribution of victims of fraudulent transactions.
 ![image info](visualizations/fig3.png)
 Figure 3: Age distribution of individuals affected by fraudulent transactions.
 
