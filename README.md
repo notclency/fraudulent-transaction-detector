@@ -98,12 +98,12 @@ Figure 4: Confusion matrix showing true positive, true negative, false positive,
 
 Classification Report: The classification report provides precision, recall, F1-score, and support for each class. Here’s an example output:
 ```
-Classification Report:               precision    recall  f1-score      support
-0              0.985954  0.994490  0.990204  2541.000000
-1              0.957187  0.896848  0.926036   349.000000
-accuracy       0.982699  0.982699  0.982699     0.982699
-macro avg      0.971570  0.945669  0.958120  2890.000000
-weighted avg   0.982480  0.982699  0.982455  2890.000000
+Classification Report:              precision      recall    f1-score        support
+                     0               0.985954    0.994490    0.990204    2541.000000
+                     1               0.957187    0.896848    0.926036     349.000000
+              accuracy               0.982699    0.982699    0.982699       0.982699
+             macro avg               0.971570    0.945669    0.958120    2890.000000
+          weighted avg               0.982480    0.982699    0.982455    2890.000000
 ```
 Figure 5: Classification report including precision, recall, and F1-score.
 
