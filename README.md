@@ -18,7 +18,23 @@ scikit-learn
 numpy
 matplotlib
 
-run "$pip install -r requirements.txt" to install all libraries
+run ```"$pip install -r requirements.txt"``` to install all libraries
+
+# Data Cleaning and Transformation
+Cleaning the 'is_fraud' Column:
+Converts is_fraud to numeric values (0 for non-fraudulent, 1 for fraudulent) to facilitate accurate analysis and modeling.
+
+Fraud Counts by Product Category:
+Aggregates fraudulent transactions by product category to identify which categories are most prone to fraud.
+
+Fraud Counts by State:
+Analyzes fraudulent transactions by state to highlight regions with higher fraud rates.
+
+Unique Transaction Count by Category:
+Counts unique transactions per category to understand transaction volume and identify categories with high transaction activity.
+
+Data Transformation:
+Extracts features like age and transaction_hour from date columns to enhance model input and analyze patterns in fraudulent activities.
 
 # Usage
 
@@ -26,7 +42,7 @@ The main.py script performs the following key tasks: data cleaning, visualizatio
 
 Running the Project
 Run the script:
-python src/main.py
+```python src/main.py```
 
 PS make sure to use required python version (3.9+) including all required libraries
 
@@ -52,20 +68,20 @@ In the random_forest() function within main.py, hyperparameter tuning via GridSe
 To enable hyperparameter tuning, uncomment the following lines in random_forest():
 ``` 
 # param_grid = {
-    #     'n_estimators': [50, 100, 200],
-    #     'max_depth': [None, 10, 20, 30],
-    #     'min_samples_split': [2, 5, 10],
-    #     'min_samples_leaf': [1, 2, 4],
-    #     'bootstrap': [True, False]
-    # }
+#     'n_estimators': [50, 100, 200],
+#     'max_depth': [None, 10, 20, 30],
+#     'min_samples_split': [2, 5, 10],
+#     'min_samples_leaf': [1, 2, 4],
+#     'bootstrap': [True, False]
+# }
 
-    # grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, n_jobs=-1, verbose=2)
+# grid_search = GridSearchCV(estimator=rf, param_grid=param_grid, cv=5, n_jobs=-1, verbose=2)
 
-    # uncomment block below to run hyperparameter tuning
-    # grid_search.fit(X_train, y_train)
-    # print(f"Best Parameters: {grid_search.best_params_}")
-    # print(f"Best Score: {grid_search.best_score_}")
-    # best_params = grid_search.best_params_
+# uncomment block below to run hyperparameter tuning
+# grid_search.fit(X_train, y_train)
+# print(f"Best Parameters: {grid_search.best_params_}")
+# print(f"Best Score: {grid_search.best_score_}")
+# best_params = grid_search.best_params_
 ```
 This will allow the Random Forest model to find the best parameters based on cross-validation.
 
