@@ -87,7 +87,7 @@ To enable hyperparameter tuning, uncomment the following lines in random_forest(
 This will allow the Random Forest model to find the best parameters based on cross-validation.
 
 # Results
-### After running the script, the model will output various performance metrics and visualizations:
+After running the script, the model will output various performance metrics and visualizations:
 
 ### Confusion Matrix: 
 This matrix helps to understand how well the model distinguishes between fraudulent and non-fraudulent transactions:
