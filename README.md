@@ -51,15 +51,18 @@ PS make sure to use required python version (3.9+) including all required librar
 The script first cleans the dataset and generates various visualizations. These visualizations help in understanding the distribution of fraudulent transactions and other insights from the data.
 ## Example Visualizations:
 
-### Fraud Count by Product Category: The following bar chart shows the count of fraudulent transactions per product category:
+### Fraud Count by Product Category: 
+The following bar chart shows the count of fraudulent transactions per product category:
 ![image info](visualizations/fig1.png)
 Figure 1: Number of fraudulent transactions by product category.
 
-### Fraud Count by State: This bar chart illustrates the number of fraudulent transactions by state. It also shows total transactions in each state, which helps in identifying states with higher fraud rates.
+### Fraud Count by State: 
+This bar chart illustrates the number of fraudulent transactions by state. It also shows total transactions in each state, which helps in identifying states with higher fraud rates.
 ![image info](visualizations/fig2.png)
 Figure 2: Number of fraudulent transactions and total transactions by state.
 
-### Age Distribution of Fraud Victims: This histogram displays the age distribution of victims of fraudulent transactions:
+### Age Distribution of Fraud Victims: 
+This histogram displays the age distribution of victims of fraudulent transactions:
 ![image info](visualizations/fig3.png)
 Figure 3: Age distribution of individuals affected by fraudulent transactions.
 
