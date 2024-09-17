@@ -96,7 +96,7 @@ Confusion Matrix: [[2527   14]
 ```
 Figure 4: Confusion matrix showing true positive, true negative, false positive, and false negative counts.
 
-### Classification Report: The classification report provides precision, recall, F1-score, and support for each class. Here’s an example output:
+### Classification Report: The classification report provides precision, recall, F1-score, and support for each class: 
 ```
 Classification Report:              precision      recall    f1-score        support
                      0               0.985954    0.994490    0.990204    2541.000000
