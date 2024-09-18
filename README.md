@@ -7,7 +7,7 @@ The Credit Card Fraud Checker is a machine learning project that detects fraudul
 **Data Preprocessing:** Cleaning and transforming raw transaction data for machine learning.\
 **Exploratory Data Analysis (EDA):** Visualizing trends of fraudulent transactions across categories and states.\
 **Random Forest Model:** Training a Random Forest classifier with predefined parameters or tuning it via GridSearchCV.\
-**Model Evaluation:** Performance analysis using accuracy, confusion matrix, and classification report.\
+**Model Evaluation:** Performance analysis using accuracy, confusion matrix, and classification report.
 
 #Prerequisites
 Ensure you have Python 3.9+ installed and the following libraries:
@@ -115,15 +115,10 @@ Figure 5: Classification report including precision, recall, and F1-score.
 # Results
 ### The project produces several key insights and metrics:
 
-**Accuracy:** Reflects how accurately the model predicts fraudulent transactions.
-
-**Confusion Matrix:** Details the number of correctly and incorrectly classified transactions.
-
-**Classification Report:** Provides a detailed performance assessment, including precision, recall, and F1-score for both classes.
-Visual Examples
-
-**Fraud Count by Category:** Helps in understanding which product categories are more prone to fraud.
-
-**Fraud Count by State:** Identifies regions with higher fraud rates, useful for targeting fraud prevention efforts.
-
+**Accuracy:** Reflects how accurately the model predicts fraudulent transactions.\
+**Confusion Matrix:** Details the number of correctly and incorrectly classified transactions.\
+**Classification Report:** Provides a detailed performance assessment, including precision, recall, and F1-score for both classes.\
+Visual Examples\
+**Fraud Count by Category:** Helps in understanding which product categories are more prone to fraud.\
+**Fraud Count by State:** Identifies regions with higher fraud rates, useful for targeting fraud prevention efforts.\
 **Age Distribution:** Provides insights into the demographic distribution of fraud victims.
