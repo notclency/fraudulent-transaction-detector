@@ -117,8 +117,8 @@ Figure 5: Classification report including precision, recall, and F1-score.
 
 **Accuracy:** Reflects how accurately the model predicts fraudulent transactions.\
 **Confusion Matrix:** Details the number of correctly and incorrectly classified transactions.\
-**Classification Report:** Provides a detailed performance assessment, including precision, recall, and F1-score for both classes.
-Visual Examples\
+**Classification Report:** Provides a detailed performance assessment, including precision, recall, and F1-score for both classes\.
+### Visual Examples ###
 **Fraud Count by Category:** Helps in understanding which product categories are more prone to fraud.\
 **Fraud Count by State:** Identifies regions with higher fraud rates, useful for targeting fraud prevention efforts.\
 **Age Distribution:** Provides insights into the demographic distribution of fraud victims.
