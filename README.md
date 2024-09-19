@@ -9,8 +9,8 @@ The Credit Card Fraud Checker is a machine learning project that detects fraudul
 **Random Forest Model:** Training a Random Forest classifier with predefined parameters or tuning it via GridSearchCV.\
 **Model Evaluation:** Performance analysis using accuracy, confusion matrix, and classification report.
 
-#Prerequisites
-Ensure you have Python 3.9+ installed and the following libraries:
+## Prerequisites
+Ensure you have Python 3.9+ installed including up to date versions of the following libraries:
 
 pandas
 plotly
