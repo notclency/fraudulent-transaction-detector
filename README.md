@@ -10,7 +10,7 @@ The Credit Card Fraud Checker is a machine learning project that detects fraudul
 **Model Evaluation:** Performance analysis using accuracy, confusion matrix, and classification report.
 
 ## Prerequisites
-Ensure you have Python 3.9+ installed including up to date versions of the following libraries:
+Ensure you have Python 3.9+ installed including up to date versions of the following libraries and packages:
 
 * pandas
 * plotly
