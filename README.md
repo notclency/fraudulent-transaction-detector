@@ -12,10 +12,10 @@ The Credit Card Fraud Checker is a machine learning project that detects fraudul
 ## Prerequisites
 Ensure you have Python 3.9+ installed including up to date versions of the following libraries:
 
-pandas
-plotly
-scikit-learn
-numpy
+pandas\
+plotly\
+scikit-learn\
+numpy\
 matplotlib
 
 run ```$pip install -r requirements.txt``` to install all libraries
