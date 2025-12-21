@@ -7,7 +7,7 @@
 
 A high-precision machine learning classifier designed to identify fraudulent transactions in highly imbalanced datasets. This project explores the trade-offs between **Random Undersampling** vs. **SMOTE Oversampling** and determines the optimal strategy for minimizing financial loss and customer friction.
 
-**[🌐 View Live Analysis Dashboard](https://clencytabe.vercel.app/projects/fraud-detection)**
+**[🌐 View Live Analysis Dashboard](https://clencytabe.com/projects/fraud-detection)**
 
 ---
 
